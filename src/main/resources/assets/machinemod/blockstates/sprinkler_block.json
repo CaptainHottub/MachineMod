@@ -1,8 +1,0 @@
-{
-	"variants": {
-		"facing=north": { "model": "machinemod:block/sprinkler_block"},
-		"facing=south": { "model": "machinemod:block/sprinkler_block", "y": 180},
-		"facing=west": { "model": "machinemod:block/sprinkler_block", "y": 270},
-		"facing=east": { "model": "machinemod:block/sprinkler_block", "y": 90}
-	}
-}
