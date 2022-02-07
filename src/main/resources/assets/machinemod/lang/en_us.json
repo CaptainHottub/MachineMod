@@ -1,0 +1,20 @@
+{
+	"item.machinemod.compressed_obsidian": "Compressed Obsidian",
+	"item.machinemod.diamond_core": "Diamond Core",
+	"item.machinemod.ender_core": "Ender Core",
+	"item.machinemod.fan_blade": "Fan Blade",
+	"item.machinemod.heavy_casing": "Heavy Casing",
+	"item.machinemod.heavy_gear": "Heavy Gear",
+	"item.machinemod.laser_focus": "Laser Focus",
+	"item.machinemod.lava_core": "Lava Core",
+	"item.machinemod.obsidian_blade": "Obsidian Blade",
+	"item.machinemod.obsidian_gear": "Obsidian Gear",
+	
+	"itemGroup.machinemod": "Machine Mod",
+	
+	"block.machinemod.farmer_block": "Farmer Block",
+	
+	
+	"block.machinemod.sprinkler_block": "Sprinkler Block"
+	
+}

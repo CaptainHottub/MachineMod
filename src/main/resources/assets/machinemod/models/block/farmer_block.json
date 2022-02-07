@@ -1,0 +1,13 @@
+{
+	"parent": "block/orientable",
+	"textures": {
+		"up": "machinemod:blocks/generic_top",
+		"down": "machinemod:blocks/generic_top",
+		"north": "machinemod:blocks/farmer_front",
+		"east": "machinemod:blocks/generic_side",
+		"south": "machinemod:blocks/generic_side",
+		"west": "machinemod:blocks/generic_side",
+		"particle": "machinemod:blocks/farmer_front"
+		
+	}
+}

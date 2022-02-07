@@ -1,0 +1,30 @@
+modLoader="javafml" 
+loaderVersion="[39,)" 
+license="MIT"
+
+
+[[mods]]
+modId="machinemod" 
+version="1.0" 
+displayName="Machine Mod" 
+logoFile="logo.png" 
+credits=""
+authors="CaptainHottub" 
+
+description='''
+A forge mod for the WASD machines datapack.
+'''
+
+[[dependencies.examplemod]] 
+    modId="forge"
+    mandatory=true 
+    versionRange="[39,)" 
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"
