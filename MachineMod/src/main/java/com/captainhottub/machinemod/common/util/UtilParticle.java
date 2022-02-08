@@ -4,42 +4,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.FarmBlock;
 
 public class UtilParticle {
-
- public static void spawnParticle2(Level level, ParticleOptions sparkle, BlockPos pos, int range) {
-	 System.out.println("spawnParticle2 was called sucessfully");
-	 if (!level.isClientSide) {
-		System.out.println("is not isClientSide");
-		// Creates the water particles
-		range = (range - 1) / 2 ;
-		 
-    	//int aoeRange = (this.range - 1) / 2;
-		for (int x = -range; x <= range; x++) {
-            for (int z = -range; z <= range; z++) {
-            	double d0 = pos.offset(x, 0, z).getX() + level.getRandom().nextFloat();
-                double d1 = pos.offset(x, 0, z).getY() + 1.0D;
-                double d2 = pos.offset(x, 0, z).getZ() + level.getRandom().nextFloat();
-               
-                // I dont think bellow is neccesarry, just make the Y offset hardcoded, ie: +0.4D
-                var state1 = level.getBlockState(pos);
-                if (state1.canOcclude() || state1.getBlock() instanceof FarmBlock)
-                    d1 += 0.3D;
-           
-                //Minecraft.getInstance().particleEngine.createParticle(sparkle, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-                level.addParticle(sparkle, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-            	}
-        	}
-		 
-		 //spawnParticle(world, sparkle, pos.getX() + .5F, pos.getY() + .5F, pos.getZ() + .5F, count);
-		 }
-	
-	}
-
-	
-	
-	
   
   public static void spawnParticleBeam(Level world, ParticleOptions sparkle, BlockPos start, BlockPos end, int count) {
     // thanks to http://www.minecraftforge.net/forum/index.php?topic=30567.0

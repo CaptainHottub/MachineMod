@@ -1,6 +1,7 @@
 package com.captainhottub.machinemod;
 
-import com.captainhottub.machinemod.core.config.ModConfigs;
+import com.captainhottub.machinemod.core.config.ConfigRegistry;
+import com.captainhottub.machinemod.core.init.BlockEntityInit;
 import com.captainhottub.machinemod.core.init.BlockInit;
 import com.captainhottub.machinemod.core.init.ItemInit;
 
@@ -9,9 +10,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(MachineMod.MODID)
@@ -46,12 +45,14 @@ public class MachineMod {
 
 		BlockInit.BLOCKS.register(bus);
 		ItemInit.ITEMS.register(bus);
+		BlockEntityInit.BLOCK_ENTITIES.register(bus);
 		
 		
+		//ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModConfigs.CLIENT);
+		//ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.COMMON, "machinemod-common.toml");
 		
-		ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModConfigs.CLIENT);
-		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfigs.COMMON, "machinemod-common.toml");
-		
+		ConfigRegistry.setup();
+	    ConfigRegistry.setupClient();
 		
 		
 		

@@ -2,6 +2,7 @@ modLoader="javafml"
 loaderVersion="[39,)" 
 license="MIT"
 
+issuetrackerURL = "https://github.com/CaptainHottub/MachineMod/issues"
 
 [[mods]]
 modId="machinemod" 
@@ -12,19 +13,5 @@ credits=""
 authors="CaptainHottub" 
 
 description='''
-A forge mod for the WASD machines datapack.
+A mod with blocks I want.
 '''
-
-[[dependencies.examplemod]] 
-    modId="forge"
-    mandatory=true 
-    versionRange="[39,)" 
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.examplemod]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.18.1,1.19)"
-    ordering="NONE"
-    side="BOTH"

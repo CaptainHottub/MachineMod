@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " W ",
+        "BBB"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_bars"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        },
+        "B": {
+            "item": "minecraft:bone_block"
+        }
+    },
+    "result": {
+        "item": "machinemod:sprinkler_block",
+        "count": 1
+    }
+}

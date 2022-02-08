@@ -45,7 +45,7 @@ public final class ItemInit {
 	public static final RegistryObject<BlockItem> SPRINKLER_BLOCK_ITEM = ITEMS.register("sprinkler_block", 
 			() -> new BlockItem(BlockInit.SPRINKLER_BLOCK.get(), 
 					new Item.Properties().tab(MachineMod.MACHINE_TAB)));
-	
+
 	
 	
 	
