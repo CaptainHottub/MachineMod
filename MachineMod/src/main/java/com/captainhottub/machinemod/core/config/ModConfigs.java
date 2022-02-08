@@ -32,7 +32,7 @@ public final class ModConfigs {
     // Block 
     public static final ForgeConfigSpec.IntValue SPRINKLER_RANGE;
     public static final ForgeConfigSpec.IntValue SPRINKLER_COOLDOWN;
-    public static final ForgeConfigSpec.DoubleValue SPRINKLER_GROWTH_CHANCE;
+    public static final ForgeConfigSpec.IntValue SPRINKLER_GROWTH_CHANCE;
 
   
     // World
@@ -45,16 +45,17 @@ public final class ModConfigs {
         	
         // Block related configs
         common.comment("General configuration options.").push("General");
+                 
         SPRINKLER_RANGE = common
                 .comment("The range of the sprinkler.")
                 .defineInRange("sprinklerRange", 9, 1, Integer.MAX_VALUE);
         SPRINKLER_COOLDOWN = common
-                .comment("The amount of time in seconds between each Sprinkler growth tick.")
-                .defineInRange("sprinklerCooldown", 40, 1, Integer.MAX_VALUE);
+                .comment("The amount of time in ticks between each Sprinkler growth tick.")
+                .defineInRange("sprinklerCooldown", 100, 1, Integer.MAX_VALUE);
         SPRINKLER_GROWTH_CHANCE = common
                 .comment("The chance that the block will get a growth tick. It is a percentage(%).")
-                .defineInRange("sprinklerGrowthChance", 0.40, 0.01, Double.MAX_VALUE);
-
+                .defineInRange("sprinklerGrowthChance", 25, 1, Integer.MAX_VALUE);
+        
      
         common.pop();
         
